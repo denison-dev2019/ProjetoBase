@@ -66,6 +66,7 @@ namespace Servicos
                 Notificar(ValidationMessage.RegistroNaoExistente(nameof(id)));
                 return false;
             }
+            //teste
             _unitOfWork.BeginTransaction();
             await _unitOfWork.Pedido.RemoverAsync(id);
             _unitOfWork.CommitTransaction();
