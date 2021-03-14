@@ -10,7 +10,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace APILoja.V1.Controller
 {
@@ -49,7 +48,7 @@ namespace APILoja.V1.Controller
         public async Task<ActionResult<PedidoDTO>> Atualizar([FromBody] PedidoDTO pedidoDTO) => 
             CustomResponse(await _pedidoFacadeServico.Atualizar(pedidoDTO));
 
-        [HttpDelete("excluir/{id}")]
-        public async Task<IActionResult> Delete(int id) => CustomResponse(await _pedidoFacadeServico.Remover(id));
+        [HttpDelete, Route("excluir/{id}")]
+        public async Task<IActionResult> Delete([FromRoute] int id) => CustomResponse(await _pedidoFacadeServico.Remover(id));
     }
 }
