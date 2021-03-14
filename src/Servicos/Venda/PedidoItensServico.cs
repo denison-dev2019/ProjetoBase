@@ -10,23 +10,15 @@ using System.Threading.Tasks;
 
 namespace Servicos.Venda
 {
-    public class PedidoItensServico:ServicoBase<PedidoItensDTO>, IPedidoItensServico
+    public class PedidoItensServico : ServicoBase<PedidoItensDTO>, IPedidoItensServico
     {
-        public PedidoItensServico(IServiceProvider serviceProvider): base(serviceProvider){ }
+        public PedidoItensServico(IServiceProvider serviceProvider) : base(serviceProvider) { }
 
         public async Task<bool> Adicionar(PedidoItensDTO pedidoItensDTO)
         {
-            if ( _unitOfWork.Pedido.Obter(p => p.Id == pedidoItensDTO.PedidoId).Result.Any())
+            if (await _unitOfWork.PedidoItens.ExisteAsync(p => p.Id == pedidoItensDTO.Id))
             {
-                if (_unitOfWork.PedidoItens.Obter(p => p.Id == pedidoItensDTO.Id).Result.Any()) 
-                {
-                    Notificar("Este Item já existe para este pedido.");
-                    return false;
-                }
-                
-            }else
-            {
-                Notificar("Pedido inexistente");
+                Notificar("Este Item já existe para este pedido.");
                 return false;
             }
             await _unitOfWork.PedidoItens.AdicionarAsync(_mapper.Map<PedidoItens>(pedidoItensDTO));
@@ -36,28 +28,20 @@ namespace Servicos.Venda
 
         public async Task<bool> Atualizar(PedidoItensDTO pedidoItensDTO)
         {
-            if (_unitOfWork.Pedido.Obter(p => p.Id == pedidoItensDTO.PedidoId).Result.Any())
-            {
-                if (!_unitOfWork.PedidoItens.Obter(p => p.Id == pedidoItensDTO.Id).Result.Any())
-                {
+            if(!await _unitOfWork.PedidoItens.ExisteAsync(p => p.Id == pedidoItensDTO.Id))
+            { 
                     Notificar("Este Item não existe neste pedido.");
                     return false;
-                }
-            }
-            else
-            {
-                Notificar("Pedido inexistente");
-                return false;
             }
             await _unitOfWork.PedidoItens.AtualizarAsync(_mapper.Map<PedidoItens>(pedidoItensDTO));
             _unitOfWork.SaveChanges();
             return true;
         }
 
-        public async  Task<IEnumerable<PedidoItensDTO>> ListarTodos(PedidoItensFiltroDTO filtro)
+        public async Task<IEnumerable<PedidoItensDTO>> ListarTodos(PedidoItensFiltroDTO filtro)
         {
-            return _mapper.Map<List<PedidoItensDTO>>( 
-                await _unitOfWork.PedidoItens.Obter(x=>x.PedidoId == filtro.PedidoId));
+            return _mapper.Map<List<PedidoItensDTO>>(
+                await _unitOfWork.PedidoItens.Obter(x => x.PedidoId == filtro.PedidoId));
         }
 
         public async Task<PedidoItensDTO> ObterPorId(int id)
@@ -67,12 +51,12 @@ namespace Servicos.Venda
 
         public async Task<bool> Remover(int id)
         {
-            if ((await _unitOfWork.PedidoItens.ObterPorId(id)) == null)
+            if (!await _unitOfWork.PedidoItens.ExisteAsync(x =>x.Id == id))
             {
                 Notificar(ValidationMessage.RegistroNaoExistente(nameof(id)));
                 return false;
             }
-            
+
             _unitOfWork.BeginTransaction();
             await _unitOfWork.PedidoItens.RemoverAsync(id);
             _unitOfWork.CommitTransaction();

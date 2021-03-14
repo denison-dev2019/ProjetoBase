@@ -26,7 +26,7 @@ namespace Servicos
         {
           if (await _unitOfWork.Pedido.ExisteAsync(p => p.Id == pedidoDTO.Id))
           {
-               Notificar("Este pedido já existe.");
+               Notificar(ValidationMessage.RegistroJaExistente(nameof(pedidoDTO.Id)));
                return null;
           }
             
@@ -39,7 +39,7 @@ namespace Servicos
 
         public async Task<PedidoDTO> Atualizar(PedidoDTO pedidoDTO)
         {
-            if (!_unitOfWork.Pedido.Obter(p => p.Id == pedidoDTO.Id).Result.Any())
+            if (!await _unitOfWork.Pedido.ExisteAsync(p => p.Id == pedidoDTO.Id))
             {
                 Notificar("Não foi possivel atualizar. Pedido inexistente");
                 return null;
@@ -61,7 +61,7 @@ namespace Servicos
 
         public async Task<bool> Remover(int id)
         {
-            if ((await _unitOfWork.Pedido.ObterPorId(id)) == null)
+            if (!await _unitOfWork.Pedido.ExisteAsync(p => p.Id == id))
             {
                 Notificar(ValidationMessage.RegistroNaoExistente(nameof(id)));
                 return false;
@@ -85,8 +85,10 @@ namespace Servicos
             foreach (var item in itens) 
             {
                 var newItem = _mapper.Map<ProdutoGetDTO>(await _unitOfWork.Produto.ObterPorId(item.ProdutoId));
-                item.ValorUnitarioProduto = newItem.Preco;
-                item.ValorDesconto = await _promocaoServico.AplicarFormula(newItem.Preco, item.QuantidadeProduto, newItem.PromocaoId);
+                if (newItem != null) {
+                    item.ValorUnitarioProduto = newItem.Preco;
+                    item.ValorDesconto = await _promocaoServico.AplicarFormula(newItem.Preco, item.QuantidadeProduto, newItem.PromocaoId);
+                }
             }
 
             return itens;

@@ -20,7 +20,7 @@ namespace Servicos.Cadastro
         {
             if (!ExecutarValidacao(new ProdutoValidator(), produtoDTO)) return null;
             
-            if (produtoDTO.Id > 0 || (await _unitOfWork.Produto.ObterPorId(produtoDTO.Id)) != null)
+            if (produtoDTO.Id > 0 || (await _unitOfWork.Produto.ExisteAsync(x=>x.Id == produtoDTO.Id)))
             {
                 Notificar(ValidationMessage.RegistroJaExistente(nameof(produtoDTO.Id)));
                 return null;
@@ -34,7 +34,7 @@ namespace Servicos.Cadastro
         public async Task<ProdutoDTO> Atualizar(int id, ProdutoDTO produtoDTO)
         {
             if (!ExecutarValidacao(new ProdutoValidator(), produtoDTO)) return null;
-            if (await (_unitOfWork.Produto.ObterPorId(id)) == null)
+            if (!await _unitOfWork.Produto.ExisteAsync(x => x.Id == produtoDTO.Id))
             {
                 Notificar(ValidationMessage.RegistroNaoExistente(nameof(produtoDTO.Id)));
                 return null;
@@ -59,7 +59,7 @@ namespace Servicos.Cadastro
 
         public async Task<bool> Remover(int id)
         {
-            if (await _unitOfWork.Produto.ObterPorId(id) == null)
+            if (!await _unitOfWork.Produto.ExisteAsync(x => x.Id == id))
             {
                 Notificar(ValidationMessage.RegistroNaoExistente(nameof(id)));
                 return false;

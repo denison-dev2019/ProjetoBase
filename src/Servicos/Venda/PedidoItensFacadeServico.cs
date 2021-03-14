@@ -21,9 +21,7 @@ namespace Servicos.Venda
         {
             var itens = await _pedidoItensFacadeServico.ListarTodos(filtro);
             foreach (var item in itens)
-            {
                 item.Produto = await _produtoServico.ObterPorId(item.ProdutoId);
-            }
             return itens;
         }
 

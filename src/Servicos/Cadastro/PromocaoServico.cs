@@ -26,7 +26,7 @@ namespace Servicos.Cadastro
 
         public async Task<PromocaoDTO> Adicionar(PromocaoDTO promocaoDTO)
         {
-            if ( (await _unitOfWork.Promocao.Obter(x => x.Descricao == promocaoDTO.Descricao)).Any() )
+            if ( await _unitOfWork.Promocao.ExisteAsync(x => x.Descricao == promocaoDTO.Descricao) )
             {
                 Notificar(ValidationMessage.RegistroJaExistente(nameof(promocaoDTO.Descricao)));
                 return null;
@@ -39,7 +39,7 @@ namespace Servicos.Cadastro
 
         public async  Task<PromocaoDTO> Atualizar(int id, PromocaoDTO promocaoDTO)
         {
-            if ((await _unitOfWork.Promocao.ObterPorId(id)) == null)
+            if (!await _unitOfWork.Promocao.ExisteAsync(x => x.Id == id))
             {
                 Notificar(ValidationMessage.RegistroNaoExistente(nameof(promocaoDTO.Id)));
                 return null;
@@ -52,7 +52,7 @@ namespace Servicos.Cadastro
 
         public async Task<bool> Remover(int id)
         {
-            if ( (await _unitOfWork.Promocao.ObterPorId(id)) == null)
+            if (!await _unitOfWork.Promocao.ExisteAsync(x => x.Id == id))
             {
                 Notificar(ValidationMessage.RegistroNaoExistente(nameof(id)));
                 return false;
