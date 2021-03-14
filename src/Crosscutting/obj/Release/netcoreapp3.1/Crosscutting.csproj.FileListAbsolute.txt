@@ -1,0 +1,9 @@
+C:\Users\denis\source\repos\ProjetoSiteWare\src\Crosscutting\bin\Release\netcoreapp3.1\Crosscutting.deps.json
+C:\Users\denis\source\repos\ProjetoSiteWare\src\Crosscutting\bin\Release\netcoreapp3.1\Crosscutting.dll
+C:\Users\denis\source\repos\ProjetoSiteWare\src\Crosscutting\bin\Release\netcoreapp3.1\Crosscutting.pdb
+C:\Users\denis\source\repos\ProjetoSiteWare\src\Crosscutting\obj\Release\netcoreapp3.1\Crosscutting.csprojAssemblyReference.cache
+C:\Users\denis\source\repos\ProjetoSiteWare\src\Crosscutting\obj\Release\netcoreapp3.1\Crosscutting.AssemblyInfoInputs.cache
+C:\Users\denis\source\repos\ProjetoSiteWare\src\Crosscutting\obj\Release\netcoreapp3.1\Crosscutting.AssemblyInfo.cs
+C:\Users\denis\source\repos\ProjetoSiteWare\src\Crosscutting\obj\Release\netcoreapp3.1\Crosscutting.csproj.CoreCompileInputs.cache
+C:\Users\denis\source\repos\ProjetoSiteWare\src\Crosscutting\obj\Release\netcoreapp3.1\Crosscutting.dll
+C:\Users\denis\source\repos\ProjetoSiteWare\src\Crosscutting\obj\Release\netcoreapp3.1\Crosscutting.pdb
