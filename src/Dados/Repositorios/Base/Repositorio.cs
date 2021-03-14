@@ -51,7 +51,8 @@
 
                 return existing;
             }
-            
+
+            public async Task<bool> ExisteAsync(Expression<Func<T, bool>> predicate) => await _db.Set<T>().AnyAsync(predicate);
 
             public virtual async Task RemoverAsync(T entidade) => _db.Set<T>().Remove(entidade);
             

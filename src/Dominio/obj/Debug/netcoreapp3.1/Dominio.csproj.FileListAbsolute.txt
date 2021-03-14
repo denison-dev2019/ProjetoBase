@@ -34,3 +34,15 @@ C:\Users\denis\Source\Repos\ProjetoBase4\src\Dominio\obj\Debug\netcoreapp3.1\Dom
 C:\Users\denis\Source\Repos\ProjetoBase4\src\Dominio\obj\Debug\netcoreapp3.1\Dominio.csproj.CopyComplete
 C:\Users\denis\Source\Repos\ProjetoBase4\src\Dominio\obj\Debug\netcoreapp3.1\Dominio.dll
 C:\Users\denis\Source\Repos\ProjetoBase4\src\Dominio\obj\Debug\netcoreapp3.1\Dominio.pdb
+C:\Users\denis\Source\Repos\ProjetoBase\src\Dominio\bin\Debug\netcoreapp3.1\Dominio.deps.json
+C:\Users\denis\Source\Repos\ProjetoBase\src\Dominio\bin\Debug\netcoreapp3.1\Dominio.dll
+C:\Users\denis\Source\Repos\ProjetoBase\src\Dominio\bin\Debug\netcoreapp3.1\Dominio.pdb
+C:\Users\denis\Source\Repos\ProjetoBase\src\Dominio\bin\Debug\netcoreapp3.1\Crosscutting.dll
+C:\Users\denis\Source\Repos\ProjetoBase\src\Dominio\bin\Debug\netcoreapp3.1\Crosscutting.pdb
+C:\Users\denis\Source\Repos\ProjetoBase\src\Dominio\obj\Debug\netcoreapp3.1\Dominio.csprojAssemblyReference.cache
+C:\Users\denis\Source\Repos\ProjetoBase\src\Dominio\obj\Debug\netcoreapp3.1\Dominio.AssemblyInfoInputs.cache
+C:\Users\denis\Source\Repos\ProjetoBase\src\Dominio\obj\Debug\netcoreapp3.1\Dominio.AssemblyInfo.cs
+C:\Users\denis\Source\Repos\ProjetoBase\src\Dominio\obj\Debug\netcoreapp3.1\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\denis\Source\Repos\ProjetoBase\src\Dominio\obj\Debug\netcoreapp3.1\Dominio.csproj.CopyComplete
+C:\Users\denis\Source\Repos\ProjetoBase\src\Dominio\obj\Debug\netcoreapp3.1\Dominio.dll
+C:\Users\denis\Source\Repos\ProjetoBase\src\Dominio\obj\Debug\netcoreapp3.1\Dominio.pdb

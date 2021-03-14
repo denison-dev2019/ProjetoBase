@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\denis\\Source\\Repos\\ProjetoBase4\\src\\Dados\\Dados.csproj": {}
+    "C:\\Users\\denis\\source\\repos\\ProjetoBase\\src\\Dados\\Dados.csproj": {}
   },
   "projects": {
-    "C:\\Users\\denis\\Source\\Repos\\ProjetoBase4\\src\\Crosscutting\\Crosscutting.csproj": {
+    "C:\\Users\\denis\\source\\repos\\ProjetoBase\\src\\Crosscutting\\Crosscutting.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\denis\\Source\\Repos\\ProjetoBase4\\src\\Crosscutting\\Crosscutting.csproj",
+        "projectUniqueName": "C:\\Users\\denis\\source\\repos\\ProjetoBase\\src\\Crosscutting\\Crosscutting.csproj",
         "projectName": "Crosscutting",
-        "projectPath": "C:\\Users\\denis\\Source\\Repos\\ProjetoBase4\\src\\Crosscutting\\Crosscutting.csproj",
+        "projectPath": "C:\\Users\\denis\\source\\repos\\ProjetoBase\\src\\Crosscutting\\Crosscutting.csproj",
         "packagesPath": "C:\\Users\\denis\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\denis\\Source\\Repos\\ProjetoBase4\\src\\Crosscutting\\obj\\",
+        "outputPath": "C:\\Users\\denis\\source\\repos\\ProjetoBase\\src\\Crosscutting\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -69,14 +69,14 @@
         }
       }
     },
-    "C:\\Users\\denis\\Source\\Repos\\ProjetoBase4\\src\\Dados\\Dados.csproj": {
+    "C:\\Users\\denis\\source\\repos\\ProjetoBase\\src\\Dados\\Dados.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\denis\\Source\\Repos\\ProjetoBase4\\src\\Dados\\Dados.csproj",
+        "projectUniqueName": "C:\\Users\\denis\\source\\repos\\ProjetoBase\\src\\Dados\\Dados.csproj",
         "projectName": "Dados",
-        "projectPath": "C:\\Users\\denis\\Source\\Repos\\ProjetoBase4\\src\\Dados\\Dados.csproj",
+        "projectPath": "C:\\Users\\denis\\source\\repos\\ProjetoBase\\src\\Dados\\Dados.csproj",
         "packagesPath": "C:\\Users\\denis\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\denis\\Source\\Repos\\ProjetoBase4\\src\\Dados\\obj\\",
+        "outputPath": "C:\\Users\\denis\\source\\repos\\ProjetoBase\\src\\Dados\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -98,14 +98,14 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\denis\\Source\\Repos\\ProjetoBase4\\src\\Crosscutting\\Crosscutting.csproj": {
-                "projectPath": "C:\\Users\\denis\\Source\\Repos\\ProjetoBase4\\src\\Crosscutting\\Crosscutting.csproj"
+              "C:\\Users\\denis\\source\\repos\\ProjetoBase\\src\\Crosscutting\\Crosscutting.csproj": {
+                "projectPath": "C:\\Users\\denis\\source\\repos\\ProjetoBase\\src\\Crosscutting\\Crosscutting.csproj"
               },
-              "C:\\Users\\denis\\Source\\Repos\\ProjetoBase4\\src\\Dominio\\Dominio.csproj": {
-                "projectPath": "C:\\Users\\denis\\Source\\Repos\\ProjetoBase4\\src\\Dominio\\Dominio.csproj"
+              "C:\\Users\\denis\\source\\repos\\ProjetoBase\\src\\Dominio\\Dominio.csproj": {
+                "projectPath": "C:\\Users\\denis\\source\\repos\\ProjetoBase\\src\\Dominio\\Dominio.csproj"
               },
-              "C:\\Users\\denis\\Source\\Repos\\ProjetoBase4\\src\\Servicos\\Servicos.csproj": {
-                "projectPath": "C:\\Users\\denis\\Source\\Repos\\ProjetoBase4\\src\\Servicos\\Servicos.csproj"
+              "C:\\Users\\denis\\source\\repos\\ProjetoBase\\src\\Servicos\\Servicos.csproj": {
+                "projectPath": "C:\\Users\\denis\\source\\repos\\ProjetoBase\\src\\Servicos\\Servicos.csproj"
               }
             }
           }
@@ -177,14 +177,14 @@
         }
       }
     },
-    "C:\\Users\\denis\\Source\\Repos\\ProjetoBase4\\src\\Dominio\\Dominio.csproj": {
+    "C:\\Users\\denis\\source\\repos\\ProjetoBase\\src\\Dominio\\Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\denis\\Source\\Repos\\ProjetoBase4\\src\\Dominio\\Dominio.csproj",
+        "projectUniqueName": "C:\\Users\\denis\\source\\repos\\ProjetoBase\\src\\Dominio\\Dominio.csproj",
         "projectName": "Dominio",
-        "projectPath": "C:\\Users\\denis\\Source\\Repos\\ProjetoBase4\\src\\Dominio\\Dominio.csproj",
+        "projectPath": "C:\\Users\\denis\\source\\repos\\ProjetoBase\\src\\Dominio\\Dominio.csproj",
         "packagesPath": "C:\\Users\\denis\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\denis\\Source\\Repos\\ProjetoBase4\\src\\Dominio\\obj\\",
+        "outputPath": "C:\\Users\\denis\\source\\repos\\ProjetoBase\\src\\Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -206,8 +206,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\denis\\Source\\Repos\\ProjetoBase4\\src\\Crosscutting\\Crosscutting.csproj": {
-                "projectPath": "C:\\Users\\denis\\Source\\Repos\\ProjetoBase4\\src\\Crosscutting\\Crosscutting.csproj"
+              "C:\\Users\\denis\\source\\repos\\ProjetoBase\\src\\Crosscutting\\Crosscutting.csproj": {
+                "projectPath": "C:\\Users\\denis\\source\\repos\\ProjetoBase\\src\\Crosscutting\\Crosscutting.csproj"
               }
             }
           }
@@ -259,14 +259,14 @@
         }
       }
     },
-    "C:\\Users\\denis\\Source\\Repos\\ProjetoBase4\\src\\Servicos\\Servicos.csproj": {
+    "C:\\Users\\denis\\source\\repos\\ProjetoBase\\src\\Servicos\\Servicos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\denis\\Source\\Repos\\ProjetoBase4\\src\\Servicos\\Servicos.csproj",
+        "projectUniqueName": "C:\\Users\\denis\\source\\repos\\ProjetoBase\\src\\Servicos\\Servicos.csproj",
         "projectName": "Servicos",
-        "projectPath": "C:\\Users\\denis\\Source\\Repos\\ProjetoBase4\\src\\Servicos\\Servicos.csproj",
+        "projectPath": "C:\\Users\\denis\\source\\repos\\ProjetoBase\\src\\Servicos\\Servicos.csproj",
         "packagesPath": "C:\\Users\\denis\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\denis\\Source\\Repos\\ProjetoBase4\\src\\Servicos\\obj\\",
+        "outputPath": "C:\\Users\\denis\\source\\repos\\ProjetoBase\\src\\Servicos\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -288,8 +288,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\denis\\Source\\Repos\\ProjetoBase4\\src\\Dominio\\Dominio.csproj": {
-                "projectPath": "C:\\Users\\denis\\Source\\Repos\\ProjetoBase4\\src\\Dominio\\Dominio.csproj"
+              "C:\\Users\\denis\\source\\repos\\ProjetoBase\\src\\Dominio\\Dominio.csproj": {
+                "projectPath": "C:\\Users\\denis\\source\\repos\\ProjetoBase\\src\\Dominio\\Dominio.csproj"
               }
             }
           }

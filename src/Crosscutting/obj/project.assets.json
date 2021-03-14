@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\denis\\Source\\Repos\\ProjetoBase4\\src\\Crosscutting\\Crosscutting.csproj",
+      "projectUniqueName": "C:\\Users\\denis\\Source\\Repos\\ProjetoBase\\src\\Crosscutting\\Crosscutting.csproj",
       "projectName": "Crosscutting",
-      "projectPath": "C:\\Users\\denis\\Source\\Repos\\ProjetoBase4\\src\\Crosscutting\\Crosscutting.csproj",
+      "projectPath": "C:\\Users\\denis\\Source\\Repos\\ProjetoBase\\src\\Crosscutting\\Crosscutting.csproj",
       "packagesPath": "C:\\Users\\denis\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\denis\\Source\\Repos\\ProjetoBase4\\src\\Crosscutting\\obj\\",
+      "outputPath": "C:\\Users\\denis\\Source\\Repos\\ProjetoBase\\src\\Crosscutting\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

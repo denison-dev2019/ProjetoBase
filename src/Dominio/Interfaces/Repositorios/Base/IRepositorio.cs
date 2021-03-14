@@ -20,6 +20,7 @@ namespace Dominio.Interfaces.Repositorios.Base
                 Expression<Func<T, bool>> filtro = null,
                 PaginacaoDTO paginacao = null,
                 params Expression<Func<T, object>>[] includes);
+        Task<bool> ExisteAsync(Expression<Func<T, bool>> predicate);
         #endregion
     }
 }

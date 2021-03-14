@@ -24,7 +24,7 @@ namespace Servicos
         }
         public async Task<PedidoDTO> Adicionar(PedidoDTO pedidoDTO)
         {
-          if ((await _unitOfWork.Pedido.Obter(p => p.Id == pedidoDTO.Id)).Any())
+          if (await _unitOfWork.Pedido.ExisteAsync(p => p.Id == pedidoDTO.Id))
           {
                Notificar("Este pedido já existe.");
                return null;
