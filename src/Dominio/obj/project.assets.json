@@ -125,11 +125,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\denis\\Source\\Repos\\ProjetoBase\\src\\Dominio\\Dominio.csproj",
+      "projectUniqueName": "C:\\Users\\denis\\Source\\Repos\\ProjetoBase4\\src\\Dominio\\Dominio.csproj",
       "projectName": "Dominio",
-      "projectPath": "C:\\Users\\denis\\Source\\Repos\\ProjetoBase\\src\\Dominio\\Dominio.csproj",
+      "projectPath": "C:\\Users\\denis\\Source\\Repos\\ProjetoBase4\\src\\Dominio\\Dominio.csproj",
       "packagesPath": "C:\\Users\\denis\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\denis\\Source\\Repos\\ProjetoBase\\src\\Dominio\\obj\\",
+      "outputPath": "C:\\Users\\denis\\Source\\Repos\\ProjetoBase4\\src\\Dominio\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -151,8 +151,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\denis\\Source\\Repos\\ProjetoBase\\src\\Crosscutting\\Crosscutting.csproj": {
-              "projectPath": "C:\\Users\\denis\\Source\\Repos\\ProjetoBase\\src\\Crosscutting\\Crosscutting.csproj"
+            "C:\\Users\\denis\\Source\\Repos\\ProjetoBase4\\src\\Crosscutting\\Crosscutting.csproj": {
+              "projectPath": "C:\\Users\\denis\\Source\\Repos\\ProjetoBase4\\src\\Crosscutting\\Crosscutting.csproj"
             }
           }
         }
